@@ -34,85 +34,85 @@ Simply upload your **lab reports (PDFs or images)** to get **instant AI-generate
 ---
 
 ### 📁 Folder Structure
-
+```bash
 healthsync-ai-powered-health-analyzer/
-├── client/ # Frontend (React + Tailwind)
-│ ├── public/ # Static assets (index.html, favicon, images)
-│ └── src/
-│ ├── components/
-│ │ ├── Dashboard/
-│ │ │ ├── Dashboard.jsx
-│ │ │ ├── Sidebar.jsx
-│ │ │ ├── Header.jsx
-│ │ │ ├── DashboardHome.jsx
-│ │ │ ├── UploadSection.jsx
-│ │ │ ├── ReportsSection.jsx
-│ │ │ ├── AnalyticsSection.jsx
-│ │ │ ├── SettingsSection.jsx
-│ │ │ ├── ReportModal.jsx
-│ │ │ └── AnalysisResult.jsx
-│ │ ├── Login.jsx
-│ │ ├── Register.jsx
-│ │ └── UploadForm.js
-│ ├── services/
-│ │ └── api.js # Axios configuration
-│ ├── App.js # Routes setup
-│ ├── index.js # React entry point
-│ ├── tailwind.config.js
-│ ├── App.css / index.css
-│ └── reportWebVitals.js
-├── package.json
-├── healthsync-backend/ # Backend (Node.js + Express + MongoDB)
-│ ├── config/
-│ │ └── db.js # MongoDB connection
-│ ├── controllers/
-│ │ ├── authController.js
-│ │ └── reportController.js
-│ ├── middleware/
-│ │ └── authMiddleware.js
-│ ├── models/
-│ │ ├── userModel.js
-│ │ └── reportModel.js
-│ ├── routes/
-│ │ ├── authRoutes.js
-│ │ ├── reportRoutes.js
-│ │ └── aiRoutes.js
-│ ├── services/
-│ │ ├── aiService.js
-│ │ ├── ocrService.js
-│ │ └── fileService.js
-│ ├── uploads/
-│ ├── .env
-│ └── server.js
-└── package.json
+│
+├── client/                               # Frontend (React + Tailwind)
+│   ├── public/                            # Static assets (index.html, favicon, images)
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Dashboard/
+│   │   │   │   ├── Dashboard.jsx
+│   │   │   │   ├── Sidebar.jsx
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── DashboardHome.jsx
+│   │   │   │   ├── UploadSection.jsx
+│   │   │   │   ├── ReportsSection.jsx
+│   │   │   │   ├── AnalyticsSection.jsx
+│   │   │   │   ├── SettingsSection.jsx
+│   │   │   │   └── ReportModal.jsx
+│   │   │   ├── AnalysisResult.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   └── UploadForm.jsx
+│   │   ├── services/api.js               # Axios configuration
+│   │   ├── App.js                        # Routes setup
+│   │   ├── index.js                      # React entry point
+│   │   ├── tailwind.config.js
+│   │   ├── App.css / index.css
+│   │   └── reportWebVitals.js
+│   └── package.json
+│
+└── healthsync-backend/                   # Backend (Node.js + Express + MongoDB)
+    ├── config/db.js                      # MongoDB connection
+    ├── controllers/
+    │   ├── authController.js
+    │   └── reportController.js
+    ├── middleware/authMiddleware.js
+    ├── models/
+    │   ├── userModel.js
+    │   └── reportModel.js
+    ├── routes/
+    │   ├── authRoutes.js
+    │   ├── reportRoutes.js
+    │   └── aiRoutes.js
+    ├── services/
+    │   ├── aiService.js
+    │   ├── ocrService.js
+    │   └── fileService.js
+    ├── uploads/
+    ├── .env
+    ├── server.js
+    └── package.json
+```
 
- ### Install Dependencies
 
- # Backend
-
+⚙️ Install Dependencies
+🧩 Backend
+```
 cd healthsync-backend
-
 npm install
+```
 
- # Frontend
-
+🎨 Frontend
+```
 cd ../client
-
 npm install
+```
 
-### Run the App Locally
+🧪 Run the App Locally
 
-# Backend
-
+▶️ Backend
+```
 cd healthsync-backend
-
 npm start
+```
 
-# Frontend 
-
+💻 Frontend
+```
 cd ../client
-
 npm run dev
+```
 
 📜 License
 
