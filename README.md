@@ -3,12 +3,6 @@
 **HealthSync** is a full-stack web application that intelligently **extracts, analyzes, and summarizes medical reports** using AI-driven and rule-based processing.  
 Simply upload your **lab reports (PDFs or images)** to get **instant AI-generated health insights** — all processed **securely and locally**.
 
----
-
-## 🌐 Live Demo
-🚀 **Coming Soon** — *(or replace with your deployed URL)*
-
----
 
 ## 🧠 Key Features
 
